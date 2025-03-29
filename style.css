@@ -51,7 +51,7 @@ main img{
     height: 300px;
 }
 #cultura {
-    background-color: #333;  /* Color azul claro */
+    background-color: #333;  
     border-radius: 8px;
     padding: 20px;
     color: white;
@@ -63,7 +63,7 @@ main div{
     
 }
 #gastronomia {
-    background-color: #333;  /* Color beige claro */
+    background-color: #333;  
     padding: 20px;
     margin: 15px 0;
     border-radius: 8px;
@@ -71,7 +71,7 @@ main div{
 }
 
 #festivales {
-    background-color: #333;  /* Color verde muy claro */
+    background-color: #333;  
     padding: 20px;
     margin: 15px 0;
     border-radius: 8px;
@@ -88,13 +88,13 @@ footer {
 
 }
 
-.social-links {
+.redes-sociales {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social-links img {
+.redes-sociales img {
     display: flex;
     padding-right: 4px;
     width: 30px;
