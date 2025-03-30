@@ -56,11 +56,9 @@ main img{
     padding: 20px;
     color: white;
 }
-main div{
+main section div{
     display: flex;
-    align-items: center;
-    gap: 20px; 
-    
+    gap: 15px;
 }
 #gastronomia {
     background-color: #333;  
@@ -78,6 +76,38 @@ main div{
     color: white;
 }
 
+/*Seccion principal de museos*/
+.museos{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+}
+.museos div{
+    background-color: #ffffff1a;
+    display:flex;
+    font-size: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 8px;  
+}
+.museos img{
+    margin: 30px;
+    border-radius: 12px;
+}
+.info a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.info a:hover{
+    color: #f0a500;
+}
 /* Footer */
 footer {
     background: #222;
