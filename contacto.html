@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Tokyo Go!</h1>
+                <img src="images/icons/icon.png" alt="Icono">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="museos.html">Museos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Seccion principal-->
+     <main>
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form id="formulario-contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo*</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" id="email" name="email" required placeholder="Ej: ejemplo@correo.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 3889482048">
+                </div>
+                
+                <div class="form-group">
+                    <label for="asunto">Asunto*</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="" disabled selected>Seleccione un asunto</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="error">Reportar error</option>
+                        <option value="colaboracion">Propuesta de colaboración</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje*</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+            </form>
+        </section>
+
+     </main>
+
+     <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TokyoGo!. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer> 
+
+</body>
+</html>
