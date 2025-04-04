@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactenos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -12,7 +12,7 @@
         <nav class="navbar">
             <div class="logo">
                 <h1>Tokyo Go!</h1>
-                <img src="images/icons/icon.png" alt="Icono">
+                <img src="Assets/images/icons/icon.png" alt="Icono">
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
@@ -70,9 +70,9 @@
     <footer>
         <p>&copy; 2025 TokyoGo!. Todos los derechos reservados.</p>
         <div class="redes-sociales">
-            <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="assets/images/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/images/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/images/icons/twitter.png" alt="Twitter"></a>
         </div>
     </footer> 
 
@@ -89,7 +89,7 @@
                 `Email: ${document.getElementById('email').value}\n` +
                 // Obtenemos el teléfono, si está vacío mostramos "No proporcionado"
                 `Teléfono: ${document.getElementById('telefono').value || 'No proporcionado'}\n` +
-                // Obtenemos el asunto y lo convertimos a texto legible usando un objeto
+                // Obtenemos el asunto y lo convertimos a texto
                 `Asunto: ${{
                     'consulta': 'Consulta general',
                     'sugerencia': 'Sugerencia',
@@ -97,7 +97,7 @@
                     'colaboracion': 'Propuesta de colaboración'
                 }[document.getElementById('asunto').value]}\n` +
                 
-                // Obtenemos y mostramos el mensaje directamente
+                // mostramos el mensaje directamente
                 `Mensaje: ${document.getElementById('mensaje').value}`
             );
         });
