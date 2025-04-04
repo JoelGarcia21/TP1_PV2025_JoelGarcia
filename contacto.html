@@ -76,5 +76,31 @@
         </div>
     </footer> 
 
+    <script>
+        // Escuchamos el evento 'submit' del formulario
+        document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
+            // Prevenimos el comportamiento por defecto (que recargue la página)
+            event.preventDefault();
+            
+            // Mostramos un alert con los datos del formulario
+            alert(
+                `DATOS DEL FORMULARIO:\n----------------------\n` +
+                `Nombre: ${document.getElementById('nombre').value}\n` +
+                `Email: ${document.getElementById('email').value}\n` +
+                // Obtenemos el teléfono, si está vacío mostramos "No proporcionado"
+                `Teléfono: ${document.getElementById('telefono').value || 'No proporcionado'}\n` +
+                // Obtenemos el asunto y lo convertimos a texto legible usando un objeto
+                `Asunto: ${{
+                    'consulta': 'Consulta general',
+                    'sugerencia': 'Sugerencia',
+                    'error': 'Reportar error',
+                    'colaboracion': 'Propuesta de colaboración'
+                }[document.getElementById('asunto').value]}\n` +
+                
+                // Obtenemos y mostramos el mensaje directamente
+                `Mensaje: ${document.getElementById('mensaje').value}`
+            );
+        });
+    </script>
 </body>
 </html>
